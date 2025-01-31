@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Wish for Thamina Chaity</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #e63946;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 12px;
+            background: #ffffffaa;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #e63946;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e63946;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #2a9d8f;
+            display: none;
+            animation: fadeIn 2s, textGlow 1.5s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 0 0 5px #2a9d8f, 0 0 10px #2a9d8f, 0 0 20px #2a9d8f;
+            }
+            50% {
+                text-shadow: 0 0 10px #38b2ac, 0 0 20px #38b2ac, 0 0 40px #38b2ac;
+            }
+        }
+
+        .heart {
+            color: #e63946;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./chaity2.jpg" alt="Thamina Chaity" class="profile-image">
+    <div class="container">
+        <h1>❤️ Hi Thamina Chaity! <span class="heart">❤️</span></h1>
+        <h2>You are the most special person in my life!</h2>
+        <button id="revealButton" onclick="revealMessage()">Click to Reveal a Surprise</button>
+        <p id="message">Happy Birthday Chaity!</p>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('message');
+            const button = document.getElementById('revealButton');
+            message.style.display = 'block';
+            button.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
